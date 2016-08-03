@@ -1,0 +1,124 @@
+// CSS Grid
+.container {
+	max-width: 1050px;
+	margin: 0 auto;
+	display: block;
+
+}
+
+.container:after {
+	content: '';
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+
+.footer-a, .footer-b, .footer-c {
+	display: inline-block;
+	height: 10px;
+	width: 32%;
+}
+
+// Services grid
+
+
+.item1 {
+	width: 150px;
+	display: inline-block;
+	margin-right: 70px;
+	margin-bottom: 60px;
+	text-align: center
+}
+
+.item1 img {
+	margin-bottom: 20px;
+}
+
+.item1:nth-child(5n+6) {
+	margin-right: 0;
+}
+
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
+
+// Responsive CSS Grid
+
+@media (max-width: 1050px) {
+	.slider {
+		display: none;
+	}
+	.main-menu {
+		display: none;
+	}
+	
+	.item1 {
+		width: 31.3333%;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	.item1:nth-child(7)~.item1 {
+		display: none;
+	}
+}
+
+// Medium devices
+@media (min-width: 768px) and (max-width: 1050px) {
+	.article {
+		display: inline-block !important;
+		float: right !important;
+	}
+}
+
+// Small Devices
+@media only screen and (max-width: 320px) {
+	.item1 {
+		width: 320px;
+		margin: 0 !important;
+		margin-bottom: 20px !important;
+	}
+
+	.item1:nth-child(6)~.item1 {
+		display: none;
+	}
+
+	.article-image {
+		width: 100% !important;
+	}
+
+	.header-info {
+		float: left;
+	}
+	
+	.container {
+		overflow-x: hidden;
+	}
+
+	.main-menu {
+		display: none;
+	}
+
+	.form-container {
+		width: 100%;
+		padding: 0 20%;
+	}
+
+	.main div.article {
+		padding: 0 20px;
+		width: auto;
+		text-align: justify;
+		margin-top: 20px;
+	}
+
+	.services .container .item1 {
+		margin: 0 50%;
+	}
+
+	.form .form-container {
+		width: 100% !important;
+	}
+}
+

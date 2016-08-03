@@ -1,0 +1,107 @@
+*, html {
+	box-sizing: border-box;
+}
+
+body, p {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans';
+	text-align: center;
+}
+
+div {
+	display: block;
+}
+
+h1,h2,h3,h4 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Permanent Marker';
+	font-size: 50px;
+	color: #f79744;
+}
+
+h3 {
+	font-size: 28px; 
+}
+
+.desc {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+.container {
+	width: 1060px;
+	margin: 0 auto;
+}
+
+.tile {
+	display: inline-block;
+	margin-right: .5%;
+	margin-bottom: 1%;
+	width: 24%;
+	height: 250px;
+	background: url("img/placeholder.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+.tile img {
+	opacity: 0;
+}
+
+.active img {
+	opacity: 1;
+}
+
+.tile:hover {
+	cursor: pointer;
+}
+
+/* Hexagon 
+=====================*/
+
+.clip-svg {
+	width: 0;
+	height: 0;
+}
+
+.polygon-clip-hexagon {
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	-webkit-clip-path: url("#polygon-clip-hexagon");
+	
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	clip-path: url("#polygon-clip-hexagon");
+
+
+} 
+
+.even {
+	margin-top: -60px;
+	margin-bottom: -60px;
+}
+
+/* Snackbar
+==================*/ 
+
+.snackbar {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -125px;
+	min-width: 250px;
+	background-color: rgba(50, 200, 150, 0.9);
+	visibility: hidden;
+}
+
+.snackbar p {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 70px;
+}

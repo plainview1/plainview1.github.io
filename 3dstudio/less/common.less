@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body,p {
+	margin: 0;
+	padding: 0;
+	color: @base;
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+a:link {
+	text-decoration: none;
+	color: @light-green;
+}
+
+a:hover {
+	color: @green;
+	border-bottom: 2px solid @green;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Pfdintext';
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 125px;
+	margin-bottom: 125px;
+}
+
+h1 {font-size: 40px; margin-bottom: 40px;}
+h2 {font-size: 38px;}
+h3 {font-size: 36px;}
+h4 {font-size: 30px;}
+
+input:focus, button:focus {
+	outline: none;
+}
+
+.btn {
+	border: none;
+	border-radius: 5px;
+	background: @green;
+	padding: 20px 40px;
+	color: #fff;
+	font-family: 'Pfdintext';
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+button:hover {
+	cursor: pointer;
+	transition: 0.5s;
+}
+.btn:hover {
+	background: @light-green;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.btn-yellow:hover {
+	background-color: lighten(@yellow, 9%) !important;
+}
+footer .btn {
+	background-color: #25955a;
+	font-size: 24px;
+}
+footer .btn:hover {
+	background-color: lighten(#25955a, 10%);
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+// Mixins
+
+.clearfix () {
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+// Grid
+
+.container {
+	width: 1060px;
+	margin: 0 auto;
+}
+
+.container:after {
+	.clearfix;
+}
+
+section:after {
+	.clearfix;
+}
+
+.well {
+	min-height: 50px;
+	background: lighten(@base, 80%);
+}

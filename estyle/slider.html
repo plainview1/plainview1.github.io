@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+	<link rel="stylesheet" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+</head>
+<body style="background: #fff; margin-top: 100px;">
+<!-- 	<div class="container">
+		<section class="banner row">
+			<div class="banner-screen span"><img src="images/slider/11.jpg" alt=""></div>
+			<div class="banner-plot">
+				<h1>Soriano Spring Edition is Here</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, atque, quam sapiente ipsa minima debitis vel eius mollitia alias amet nam distinctio quia veritatis omnis beatae in sint tempore qui quisquam doloribus?
+				</p>
+			</div>
+			<div class="banner-preview span5">
+			<ul>
+				<li><a href="#"><img class="button1" src="images/slider/layer-6.jpg" class="active" alt=""></a></li>
+				<li><a href="#"><img class="button1" src="images/slider/layer-7.jpg" alt=""></a></li>
+				<li><a href="#"><img class="button1" src="images/slider/layer-8.jpg" alt=""></a></li>
+				<li><a href="#"><img class="button1" src="images/slider/layer-11.jpg" alt=""></a></li>
+			</ul>	
+			</div>
+		</section>
+	</div> -->
+	<img src="http://www.hostrating.net/wp-content/uploads/2011/01/GSPad-250x250.png" alt="slider" name="slider">
+	<form action="">
+		<button value="prev" onclick="prevbuttonpressed();">Previous</button>
+		<button value="next" onclick="nextbuttonpressed();">Next</button>
+	</form>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+
+
+<script>
+var img = new Array(2);
+img[0] = new Image();
+img[0].src = "http://devanifreeman.com/wp-content/uploads/2013/05/wordpress-250x250.png";
+img[1] = new Iamge();
+img[1].src = "https://upload.wikimedia.org/wikipedia/commons/7/7f/Dunamys_250x250.png";
+img[2] = new Iamge();
+img[2].src = "http://www.hostrating.net/wp-content/uploads/2011/01/GSPad-250x250.png";
+
+var number = 0;
+
+function nextbuttonpressed() 
+{
+	number++;
+	if(number>2)
+	{
+		number = 0;
+	}
+	document.slider.src = img[number].src;
+
+}
+
+function prevbuttonpressed() 
+{
+	number--;
+	if(number<0)
+	{
+		number = 2;
+	}
+	document.slider.src = img[number].src;
+	
+}
+</script>
+
+
+
+</body>
+</html>
+		

@@ -1,0 +1,109 @@
+// Common styles
+
+* {
+	box-sizing: border-box;
+	transition: all 0.5s;
+}
+
+// Helper classes
+
+.cf:after {
+	content: '';
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+
+.center {
+	text-align:center;
+}
+
+section {
+	margin-top: 80px;
+}
+
+body,p {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+	font-weight: 400;
+	color: @base;
+	display: block;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+h1,h2,h3,h4 {
+	font-family: 'Roboto', sans-serif;
+	color: @base;
+}
+
+h1{ font-size: 36px; font-weight: 300; text-align: center}
+h2{ font-size: 30px; font-weight: 300; text-align: center}
+h3{font-weight: 300; text-align: center}
+h4{font-weight: 300; text-align: center}
+
+h2:after {
+	content:'';
+	display: block;
+	height: 5px;
+	width: 110px;
+	background:@green;
+	margin: 0 auto;
+	margin-top: 16px;
+	margin-bottom: 60px;
+}
+
+a {
+	color: @base;
+	text-decoration: none;
+}
+a:hover {
+	color: @green;
+	text-decoration: underline;
+}
+
+input:focus {
+	outline: 0;
+}
+
+button {
+	display: block;
+	height: 50px;
+	width: 160px;
+	background: @green;
+	border: none;
+	border-radius: 20px;
+
+	color: #fff;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+button:focus {
+	outline: none;
+}
+button:hover {
+	cursor: pointer;
+}
+
+// Icons 
+
+.icon (@size: 26px) {
+	display: block;
+	width: @size;
+	height: @size;
+}
+
+.icon-phone {
+	.icon(26px);
+	background: url(../img/icon-phone.png);
+}
+
+.icon-mail {
+	.icon(26px);
+	background: url(../img/icon-mail.png);
+}

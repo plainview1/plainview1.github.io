@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tiles</title>
+	<link rel="stylesheet" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container">
+		<h1>Tiles</h1>
+		<h3>Welcome to "Tiles" mini-game!</h3>
+		<p class="desc">Select 2 tiles with the same image. To win this game - open all of tiles</p>
+		<div class="odd">
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_1.jpg" alt="">
+			</div>
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_3.jpg" alt="">
+			</div>
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_4.jpg" alt="">
+			</div>
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_3.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="even">
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_4.jpg" alt="">
+			</div>
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_1.jpg" alt="">
+			</div>
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_2.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="odd">
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_2.jpg" alt="">
+			</div>
+
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_5.jpg" alt="">
+			</div>
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_6.jpg" alt="">
+			</div>
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_6.jpg" alt="">
+			</div>
+		</div>
+		
+		<div class="even">
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_8.jpg" alt="">
+			</div>
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_5.jpg" alt="">
+			</div>
+			<div class="tile polygon-clip-hexagon">
+				<img src="img/img_7.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="tile polygon-clip-hexagon">
+			<img src="img/img_8.jpg" alt="">
+		</div>
+
+		<div class="tile polygon-clip-hexagon">
+			<img src="img/img_7.jpg" alt="">
+		</div>
+	
+	<div class="snackbar good">
+		<p>Good Job!</p>
+	</div>
+
+	<div class="snackbar bad">
+		<p>Try again</p>
+	</div>
+
+	</div>
+
+<svg class="clip-svg">
+  <defs>
+    <clipPath id="polygon-clip-hexagon" clipPathUnits="objectBoundingBox">
+      <polygon points="0.5 0, 1 0.25, 1 0.75, 0.5 1, 0 0.75, 0 0.25" />
+    </clipPath>
+  </defs>
+</svg>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<script src="scripts.js"></script>
+</html>

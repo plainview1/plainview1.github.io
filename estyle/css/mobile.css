@@ -1,0 +1,11 @@
+@media only screen and (max-width: 940px) and (min-width: 768px) {
+	.container {
+		background: red;
+	}
+}
+
+@media (min-width: 720px) {
+	body {
+		background-color: red;
+	}
+}
